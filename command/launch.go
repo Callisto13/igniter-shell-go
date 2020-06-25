@@ -167,6 +167,9 @@ func loadConfig(
 	}
 
 	jsonData, err := yaml.YAMLToJSON(yamlData)
+	if err != nil {
+		return
+	}
 
 	err = json.Unmarshal(jsonData, config)
 	if err != nil {

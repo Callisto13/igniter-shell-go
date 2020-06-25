@@ -311,5 +311,4 @@ func passSignals(
 		*/
 		_ = process.Signal(signal)
 	}
-	return
 }
